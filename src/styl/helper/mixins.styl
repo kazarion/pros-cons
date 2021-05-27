@@ -1,0 +1,68 @@
+// Clear the float on any element.
+clearfix()
+	&:after
+		display table
+		clear both
+		content ''
+
+// Fix no working `-webkit-text-size-adjust: 100%;` in Android.
+fix-text-size-adjust()
+	background-image linear-gradient(transparent, transparent)
+
+// Set margin on left & right
+margin-x($margin)
+	margin-left $margin
+	margin-right $margin
+
+// Set margin on top & bottom
+margin-y($margin)
+	margin-top $margin
+	margin-bottom $margin
+
+// Set pading on left & right
+padding-x($padding)
+	padding-left $padding
+	padding-right $padding
+
+// Set padding on top & bottom
+padding-y($padding)
+	padding-top $padding
+	padding-bottom $padding
+
+// Set one static retina image
+retinaBackground($image, $ext = 'png') {
+	background-image url('../img/' + $image + '.' + $ext)
+
+	@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+		background-image url('../img/' + $image + '@2x.' + $ext)
+	}
+}
+
+// position
+positionMix(
+							$topVar = 0,
+							$leftVar = 0,
+							$typeVar = relative,
+							$zVar = auto,
+							$rightVar = auto,
+							$bottomVar = auto
+						)
+	position $typeVar
+	z-index $zVar
+	top $topVar
+	left $leftVar
+	bottom $bottomVar
+	right $rightVar
+
+// hide content in element for seo
+content-zero()
+	font 0/0
+	overflow hidden
+	text-align left
+	text-decoration none
+	text-indent -999px
+
+wh($widthVar, $heightVar = $widthVar, $displayVar = block)
+	width $widthVar
+	height $heightVar
+	display $displayVar

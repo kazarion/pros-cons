@@ -1,0 +1,59 @@
+.list
+	padding 0 31px 0 0
+
+.scroll-cell
+	margin-top 25px
+	overflow-x hidden
+	overflow-y auto
+
+.scroll-cell--fix-height
+	height 240px
+
+.placeholder
+	background rgb(255, 240, 120)
+	height 50px
+	&:before
+		content ''
+		color rgb(225, 210, 90)
+
+.slide-enter
+	transform translateX(-100%)
+
+.slide-enter.slide-enter-active
+	transform translateX(0)
+	transition all .4s
+
+.slide-leave
+	transform translateX(0)
+
+.slide-leave.slide-leave-active
+	transform translateX(100%)
+	transition all .4s
+
+
+// .slide-appear
+// 	opacity 0
+//
+// .slide-appear.slide-appear-active
+// 	opacity 1
+// 	transition all .4s
+
+
+.sortable-list-cell
+	display block
+
+.sortable-list
+	padding 30px
+	&__item
+		display block
+		background rgba(255,255,255,.1)
+		color #fff
+		font-size 16px
+		margin-bottom 1px
+		padding 15px
+		cursor move
+
+
+
+
+/*----*/

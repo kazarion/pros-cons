@@ -1,0 +1,21 @@
+.title
+	padding 44px 30px 28px
+	font 700 42px ff
+	text-align center
+	letter-spacing .2px
+	word-spacing .2px
+	text-shadow 0 5px 10px rgba(0, 0, 0, .07)
+	color titleColor
+	transition all .2 ease-in-out
+	opacity 1
+	@media only screen and (max-width point3)
+		font-size 30px
+
+.vis
+	animation visibleObj .5s ease-in-out
+
+@keyframes visibleObj
+	from
+		opacity 0
+	to
+		opacity 1

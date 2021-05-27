@@ -1,0 +1,84 @@
+.list
+	&
+	&__item
+		list-style none
+	&__item
+		padding 0 0 10px
+
+.list__item:hover
+	.close-btn
+		right 7px
+		opacity 1
+		transform rotate(-90deg) scale(1)
+
+
+.input-wrapper
+	positionMix()
+	background-color rgba(255, 189, 101, .15)
+	box-shadow 0 5px 10px 0 rgba(210, 68, 40, .55)
+	transition all .15s ease-in-out
+	min-height 50px
+	overflow hidden
+	&:hover
+		box-shadow 0 5px 10px 0 rgba(210, 68, 40, .65)
+		background-color rgba(255, 189, 101, .4)
+
+.list__item--click
+	.input-wrapper
+		display block
+		position relative
+		top 0
+		left 0
+		box-shadow 0 0 4px 0 rgba(210, 68, 40, .65)
+		background-color rgba(255, 198, 101, 0.5)
+		transform scale(1)
+		animation scaleItem .15s ease-in-out
+
+	.input-wrapper:after
+		display block
+		content ''
+		width 1px
+		height 1px
+		background rgba(255, 198, 101, .6)
+		border-radius 50%
+		opacity 0
+		overflow hidden
+		position absolute
+		top 50%
+		left 50%
+		margin-left -10px
+		margin-top -10px
+		animation ripple .3s ease-out
+	.number-cell
+		transition all .15s ease-in-out
+		color #000
+
+@keyframes ripple
+	0%
+		transform scale(0, 0)
+		opacity 1
+	20%
+		transform scale(25, 25)
+		opacity 1
+
+	100%
+		opacity 0
+		transform scale(300, 300)
+
+
+@keyframes scaleItem
+	0%
+		transform scale(1)
+	50%
+		transform scale(0.98)
+	100%
+		transform scale(1)
+
+.placeholder
+	background rgb(255,240,120)
+	&:before
+		content 'Drop here'
+		color rgb(225,210,90)
+
+
+/**/

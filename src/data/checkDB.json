@@ -1,0 +1,49 @@
+[{
+	"title": "RED",
+	"labelFor": "color-red"
+}, {
+	"title": "INDIGO",
+	"labelFor": "color-indigo"
+}, {
+	"title": "GREEN",
+	"labelFor": "color-green"
+}, {
+	"title": "AMBER",
+	"labelFor": "color-amber"
+}, {
+	"title": "PINK",
+	"labelFor": "color-pink"
+}, {
+	"title": "LIGHT BLUE",
+	"labelFor": "color-light-blue"
+}, {
+	"title": "LAWN GREEN",
+	"labelFor": "color-lawn-green"
+}, {
+	"title": "ORANGE",
+	"labelFor": "color-orange"
+}, {
+	"title": "PURPLE",
+	"labelFor": "color-purple"
+}, {
+	"title": "CYAN",
+	"labelFor": "color-cyan"
+}, {
+	"title": "LIME",
+	"labelFor": "color-lime"
+}, {
+	"title": "RIFLE GREEN",
+	"labelFor": "color-rifle-green"
+}, {
+	"title": "DEEP PURPLE",
+	"labelFor": "color-deep-purple"
+}, {
+	"title": "TEAL",
+	"labelFor": "color-teal"
+}, {
+	"title": "YELLOW",
+	"labelFor": "color-yellow"
+}, {
+	"title": "BROWN",
+	"labelFor": "color-brown"
+}]
